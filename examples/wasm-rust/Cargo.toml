@@ -1,0 +1,16 @@
+[package]
+name = "blotless-rust-transform"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Example blotless AST WASM plugin: reorder `use` lines in Rust sources"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true
