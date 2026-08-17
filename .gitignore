@@ -1,0 +1,8 @@
+.idea/
+bin/
+.DS_Store
+coverage.out
+coverage.txt
+*.test
+*.exe
+examples/wasm-rust/target/
